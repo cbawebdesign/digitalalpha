@@ -10,8 +10,8 @@
                       <h1 class="home-title">Digital Alpha </h1>
                       <p class="padding-t-15 home-desc"></p>
                       <!---
-                      <p class="play-shadow margin-t-30 margin-l-r-auto"><a (click)="openWindowCustomClass(content)" class="play-btn video-play-icon"><i class="mdi mdi-play text-center"></i></a></p> 
-                      --> 
+                      <p class="play-shadow margin-t-30 margin-l-r-auto"><a (click)="openWindowCustomClass(content)" class="play-btn video-play-icon"><i class="mdi mdi-play text-center"></i></a></p>
+                      -->
                   </div>
               </div>
           </div>
@@ -25,7 +25,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-    
+
         <div class="modal-body">
             <youtube-player [videoId]="id" (ready)="savePlayer($event)" height="450" width="780" (change)="onStateChange($event)"
                 [playerVars]="playerVars">
@@ -42,5 +42,5 @@
 <app-work></app-work>
 
 <app-testi></app-testi>-->
-<app-contact></app-contact>
+<!--<app-contact></app-contact>-->
 <app-social></app-social>

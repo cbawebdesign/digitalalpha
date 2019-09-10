@@ -7,7 +7,7 @@ import { DescriptionComponent } from '../description/description.component';
 import { PricingComponent } from '../pricing/pricing.component';
 import { GetstartComponent } from '../getstart/getstart.component';
 import { BlogComponent } from '../blog/blog.component';
-import { ContactComponent } from '../contact/contact.component';
+// import { ContactComponent } from '../contact/contact.component';
 import { SocialComponent } from '../social/social.component';
 import { TeamComponent } from '../team/team.component';
 import { TestiComponent } from '../testi/testi.component';
@@ -25,18 +25,20 @@ import { Index6Component } from './index6/index6.component';
 import { Index7Component } from './index7/index7.component';
 import { Index8Component } from './index8/index8.component';
 import { Index9Component } from './index9/index9.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,
-    GetstartComponent, BlogComponent, ContactComponent, SocialComponent, TeamComponent, TestiComponent,
-    WorkComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component, 
+    GetstartComponent, BlogComponent, /* ContactComponent,*/ SocialComponent, TeamComponent, TestiComponent,
+    WorkComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component,
     Index7Component, Index8Component, Index9Component],
   imports: [
     CommonModule,
     NgxYoutubePlayerModule.forRoot(),
     HomeRoutingModule,
-    ParticlesModule
+    ParticlesModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

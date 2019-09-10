@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule} from '@angular/forms';
 import { HomeModule } from './home/home.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { StrategyComponent } from './strategy/strategy.component';
@@ -14,7 +15,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 @NgModule({
   declarations: [ StrategyComponent, PortfolioComponent, DisclaimersComponent, OurteamComponent, PortfolioCardComponent,  DalphateamComponent, DalphaportfolioComponent, ContactusComponent],
   imports: [
-    CommonModule, 
+    CommonModule,
+    FormsModule,
     HomeModule,
     PagesRoutingModule
   ]
