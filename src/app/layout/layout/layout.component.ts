@@ -11,6 +11,12 @@ export class LayoutComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    const appLayout = document.querySelector('app-layout')
+    console.log('appLayout is ', appLayout)
+    if (appLayout) {
+      console.log('if statement appLayout is ', appLayout)
+      // appLayout.style['max-width'] = '100%';
+    }
     document.getElementById('theme_id').classList.remove('theme-red');
     if (this.router.url == '/') {
       document.getElementById('theme_id').classList.add('theme-red');
