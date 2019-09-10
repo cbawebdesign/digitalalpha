@@ -11,14 +11,16 @@ import {PortfolioCardComponent} from './portfolio/portfolioCard.component';
 import { DalphateamComponent } from './dalphateam/dalphateam.component';
 import { DalphaportfolioComponent } from './dalphaportfolio/dalphaportfolio.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import {SharedModule} from './shared.module';
 
 @NgModule({
-  declarations: [ StrategyComponent, PortfolioComponent, DisclaimersComponent, OurteamComponent, PortfolioCardComponent,  DalphateamComponent, DalphaportfolioComponent, ContactusComponent],
+  declarations: [ StrategyComponent, PortfolioComponent, DisclaimersComponent, OurteamComponent, PortfolioCardComponent,  DalphateamComponent, DalphaportfolioComponent,  /*ContactusComponent*/],
   imports: [
     CommonModule,
     FormsModule,
     HomeModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
