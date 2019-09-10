@@ -13,6 +13,9 @@ export class HeaderComponent implements AfterViewInit {
   sections = {};
   constructor(private scrollSpyService: ScrollSpyService, private router: Router) { }
 
+  linkClick() {
+    this.toggleMenu();
+  }
   ngOnInit() {
 
     if (this.router.url == "/index4") {
